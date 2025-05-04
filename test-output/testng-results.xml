@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-04T19:44:28 IST" name="Suite" finished-at="2025-05-04T19:44:44 IST" duration-ms="16241">
+    <groups>
+    </groups>
+    <test started-at="2025-05-04T19:44:28 IST" name="Test" finished-at="2025-05-04T19:44:44 IST" duration-ms="16241">
+      <class name="tests.TC015_SearchHotelButtonNavigation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TC015_SearchHotelButtonNavigation@68e965f5]" started-at="2025-05-04T19:44:28 IST" name="setup" finished-at="2025-05-04T19:44:28 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="launchingBrowserAndLoadingURL(java.lang.String,java.lang.String)[pri:0, instance:tests.TC015_SearchHotelButtonNavigation@68e965f5]" started-at="2025-05-04T19:44:28 IST" name="launchingBrowserAndLoadingURL" finished-at="2025-05-04T19:44:32 IST" duration-ms="4361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://adactinhotelapp.com/index.php]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowserAndLoadingURL -->
+        <test-method is-config="true" signature="loginAndSearchHotel()[pri:0, instance:tests.TC015_SearchHotelButtonNavigation@68e965f5]" started-at="2025-05-04T19:44:32 IST" name="loginAndSearchHotel" finished-at="2025-05-04T19:44:38 IST" duration-ms="5498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndSearchHotel -->
+        <test-method signature="testSearchHotelButton()[pri:0, instance:tests.TC015_SearchHotelButtonNavigation@68e965f5]" started-at="2025-05-04T19:44:38 IST" name="testSearchHotelButton" finished-at="2025-05-04T19:44:44 IST" duration-ms="5895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchHotelButton -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.TC015_SearchHotelButtonNavigation@68e965f5]" started-at="2025-05-04T19:44:44 IST" name="closeBrowser" finished-at="2025-05-04T19:44:44 IST" duration-ms="392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.TC015_SearchHotelButtonNavigation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

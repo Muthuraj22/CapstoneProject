@@ -1,0 +1,462 @@
+<html>
+<head>
+<title>TestNG:  ChromeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ChromeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>39/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun May 04 18:39:02 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>932 seconds (932031 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TC005_SearchHotelValidations.testHotelSearch()'><b>testHotelSearch</b><br>Test class: tests.TC005_SearchHotelValidations<br>Parameters: Brisbane, Hotel Creek, Standard, 1, 2025-04-20, 2025-04-22, 2, 0, error_date_format</td>
+<td><div><pre>java.lang.AssertionError: TC005(Fail) - Expected date format error. expected [true] but found [false]
+	at tests.TC005_SearchHotelValidations.testHotelSearch(TC005_SearchHotelValidations.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1407858699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1407858699'><pre>java.lang.AssertionError: TC005(Fail) - Expected date format error. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.TC005_SearchHotelValidations.testHotelSearch(TC005_SearchHotelValidations.java:105)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>tests.TC005_SearchHotelValidations@120f102b</td></tr>
+<tr>
+<td title='tests.TC014_ValidateBookingConfirmationDetails.validateBookingConfirmationDetails()'><b>validateBookingConfirmationDetails</b><br>Test class: tests.TC014_ValidateBookingConfirmationDetails</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	TC014(Fail) - Room Type mismatch expected [Standard] but found [Deluxe],
+	TC014(Fail) - Arrival Date mismatch expected [24/04/2025] but found [25/04/2025],
+	TC014(Fail) - Departure Date mismatch expected [25/04/2025] but found [26/04/2025],
+	TC014(Fail) - Price Per Night mismatch expected [AUD $ 175] but found [AUD $ 125],
+	TC014(Fail) - Total Price mismatch expected [AUD $ 185] but found [AUD $ 135],
+	TC014(Fail) - GST mismatch expected [AUD $ 18.5] but found [AUD $ 13.5],
+	TC014(Fail) - Final Billed Price mismatch expected [AUD $ 203.5] but found [AUD $ 148.5],
+	TC014(Fail) - Last Name mismatch expected [Raj] but found [],
+	TC014(Fail) - Billing Address mismatch expected [Chennai] but found [null]
+	at tests.TC014_ValidateBookingConfirmationDetails.validateBookingConfirmationDetails(TC014_ValidateBookingConfirmationDetails.java:118)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace489088595", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace489088595'><pre>java.lang.AssertionError: The following asserts failed:
+	TC014(Fail) - Room Type mismatch expected [Standard] but found [Deluxe],
+	TC014(Fail) - Arrival Date mismatch expected [24/04/2025] but found [25/04/2025],
+	TC014(Fail) - Departure Date mismatch expected [25/04/2025] but found [26/04/2025],
+	TC014(Fail) - Price Per Night mismatch expected [AUD $ 175] but found [AUD $ 125],
+	TC014(Fail) - Total Price mismatch expected [AUD $ 185] but found [AUD $ 135],
+	TC014(Fail) - GST mismatch expected [AUD $ 18.5] but found [AUD $ 13.5],
+	TC014(Fail) - Final Billed Price mismatch expected [AUD $ 203.5] but found [AUD $ 148.5],
+	TC014(Fail) - Last Name mismatch expected [Raj] but found [],
+	TC014(Fail) - Billing Address mismatch expected [Chennai] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.TC014_ValidateBookingConfirmationDetails.validateBookingConfirmationDetails(TC014_ValidateBookingConfirmationDetails.java:118)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>5</td>
+<td>tests.TC014_ValidateBookingConfirmationDetails@5ace1ed4</td></tr>
+<tr>
+<td title='tests.TC015_SearchHotelButtonNavigation.testSearchHotelButton()'><b>testSearchHotelButton</b><br>Test class: tests.TC015_SearchHotelButtonNavigation</td>
+<td><div><pre>java.lang.AssertionError: TC015(Fail) - User didn&apos;t navigate to Hotel Search Page expected [true] but found [false]
+	at tests.TC015_SearchHotelButtonNavigation.testSearchHotelButton(TC015_SearchHotelButtonNavigation.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1607108162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1607108162'><pre>java.lang.AssertionError: TC015(Fail) - User didn&apos;t navigate to Hotel Search Page expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.TC015_SearchHotelButtonNavigation.testSearchHotelButton(TC015_SearchHotelButtonNavigation.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.TC015_SearchHotelButtonNavigation@1613674b</td></tr>
+<tr>
+<td title='tests.TC012_BookWithEmptyField.validateEmptyBookingFields()'><b>validateEmptyBookingFields</b><br>Test class: tests.TC012_BookWithEmptyField<br>Parameters: Muthu, Raj, Chennai, 4111111111111111, VISA, April, , 123, , , , , , , </td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [] but found [Please Select your Credit Card Expiry Year]
+	at tests.TC012_BookWithEmptyField.validateEmptyBookingFields(TC012_BookWithEmptyField.java:120)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1852656228", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1852656228'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [] but found [Please Select your Credit Card Expiry Year]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.TC012_BookWithEmptyField.validateEmptyBookingFields(TC012_BookWithEmptyField.java:120)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>21</td>
+<td>tests.TC012_BookWithEmptyField@b62d79</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TC005_SearchHotelValidations.testHotelSearch()'><b>testHotelSearch</b><br>Test class: tests.TC005_SearchHotelValidations<br>Parameters: , , , , , , , 0, error_all</td>
+<td></td>
+<td>1</td>
+<td>tests.TC005_SearchHotelValidations@120f102b</td></tr>
+<tr>
+<td title='tests.TC012_BookWithEmptyField.validateEmptyBookingFields()'><b>validateEmptyBookingFields</b><br>Test class: tests.TC012_BookWithEmptyField<br>Parameters: Muthu, Raj, , , , , , , , , Please Enter your Address, Please Enter your 16 Digit Credit Card Number, Please Select your Credit Card Type, Please Select your Credit Card Expiry Month, Please Enter your Credit Card CVV Number</td>
+<td></td>
+<td>61</td>
+<td>tests.TC012_BookWithEmptyField@b62d79</td></tr>
+<tr>
+<td title='tests.TC019_CancelButtonInBooking.verifyCancelButtonsPresent()'><b>verifyCancelButtonsPresent</b><br>Test class: tests.TC019_CancelButtonInBooking</td>
+<td></td>
+<td>0</td>
+<td>tests.TC019_CancelButtonInBooking@693fe6c9</td></tr>
+<tr>
+<td title='tests.TC012_BookWithEmptyField.validateEmptyBookingFields()'><b>validateEmptyBookingFields</b><br>Test class: tests.TC012_BookWithEmptyField<br>Parameters: Muthu, Raj, Chennai, 4111111111111111, VISA, April, 2026, , , , , , , , Please Enter your Credit Card CVV Number</td>
+<td></td>
+<td>1</td>
+<td>tests.TC012_BookWithEmptyField@b62d79</td></tr>
+<tr>
+<td title='tests.TC008_SelectHotelCancelButton.testCancelButtonFunctionality()'><b>testCancelButtonFunctionality</b><br>Test class: tests.TC008_SelectHotelCancelButton</td>
+<td></td>
+<td>0</td>
+<td>tests.TC008_SelectHotelCancelButton@66498326</td></tr>
+<tr>
+<td title='tests.TC012_BookWithEmptyField.validateEmptyBookingFields()'><b>validateEmptyBookingFields</b><br>Test class: tests.TC012_BookWithEmptyField<br>Parameters: Muthu, Raj, , 4111111111111111, VISA, April, 2026, 123, , , Please Enter your Address, , , , </td>
+<td></td>
+<td>1</td>
+<td>tests.TC012_BookWithEmptyField@b62d79</td></tr>
+<tr>
+<td title='tests.TC002_LoginButtonClickability.testSignupButtonIsVisible()'><b>testSignupButtonIsVisible</b><br>Test class: tests.TC002_LoginButtonClickability</td>
+<td></td>
+<td>0</td>
+<td>tests.TC002_LoginButtonClickability@732c2a62</td></tr>
+<tr>
+<td title='tests.TC022_CancelSelectedButton.testCancelSelectedButtonVisibility()'><b>testCancelSelectedButtonVisibility</b><br>Test class: tests.TC022_CancelSelectedButton</td>
+<td></td>
+<td>0</td>
+<td>tests.TC022_CancelSelectedButton@a2431d0</td></tr>
+<tr>
+<td title='tests.TC012_BookWithEmptyField.validateEmptyBookingFields()'><b>validateEmptyBookingFields</b><br>Test class: tests.TC012_BookWithEmptyField<br>Parameters: , , , , , , , , Please Enter your First Name, Please Enter you Last Name, Please Enter your Address, Please Enter your 16 Digit Credit Card Number, Please Select your Credit Card Type, Please Select your Credit Card Expiry Month, Please Enter your Credit Card CVV Number</td>
+<td></td>
+<td>61</td>
+<td>tests.TC012_BookWithEmptyField@b62d79</td></tr>
+<tr>
+<td title='tests.TC012_BookWithEmptyField.validateEmptyBookingFields()'><b>validateEmptyBookingFields</b><br>Test class: tests.TC012_BookWithEmptyField<br>Parameters: Muthu, Raj, Chennai, 4111111111111111, VISA, , 2026, 123, , , , , , Please Select your Credit Card Expiry Month, </td>
+<td></td>
+<td>21</td>
+<td>tests.TC012_BookWithEmptyField@b62d79</td></tr>
+<tr>
+<td title='tests.TC005_SearchHotelValidations.testHotelSearch()'><b>testHotelSearch</b><br>Test class: tests.TC005_SearchHotelValidations<br>Parameters: London, Hotel Sunshine, Deluxe, 2, 25/04/2025, 22/04/2025, 1, 1, error_date</td>
+<td></td>
+<td>1</td>
+<td>tests.TC005_SearchHotelValidations@120f102b</td></tr>
+<tr>
+<td title='tests.TC007_SelectHotelContinueButton.testContinueAfterSelectingHotel()'><b>testContinueAfterSelectingHotel</b><br>Test class: tests.TC007_SelectHotelContinueButton</td>
+<td></td>
+<td>1</td>
+<td>tests.TC007_SelectHotelContinueButton@51dcb805</td></tr>
+<tr>
+<td title='tests.TC009_InputDataValidation.validateSelectedHotelDetails()'><b>validateSelectedHotelDetails</b><br>Test class: tests.TC009_InputDataValidation</td>
+<td></td>
+<td>0</td>
+<td>tests.TC009_InputDataValidation@cad498c</td></tr>
+<tr>
+<td title='tests.TC010_ValidateBookingDetails.testContinueAfterSelectingHotel()'><b>testContinueAfterSelectingHotel</b><br>Test class: tests.TC010_ValidateBookingDetails</td>
+<td></td>
+<td>1</td>
+<td>tests.TC010_ValidateBookingDetails@1e6454ec</td></tr>
+<tr>
+<td title='tests.TC005_SearchHotelValidations.testHotelSearch()'><b>testHotelSearch</b><br>Test class: tests.TC005_SearchHotelValidations<br>Parameters: Brisbane, Hotel Creek, Standard, 1, , , 2, 0, error_date_empty</td>
+<td></td>
+<td>1</td>
+<td>tests.TC005_SearchHotelValidations@120f102b</td></tr>
+<tr>
+<td title='tests.TC005_SearchHotelValidations.testHotelSearch()'><b>testHotelSearch</b><br>Test class: tests.TC005_SearchHotelValidations<br>Parameters: Sydney, Hotel Creek, Standard, 1, 20/04/2025, 22/04/2025, 2, 1, success</td>
+<td></td>
+<td>1</td>
+<td>tests.TC005_SearchHotelValidations@120f102b</td></tr>
+<tr>
+<td title='tests.TC003_InvalidLogin.testLogin()'><b>testLogin</b><br>Test class: tests.TC003_InvalidLogin<br>Parameters: , Muthuraj22$, Enter Username</td>
+<td></td>
+<td>0</td>
+<td>tests.TC003_InvalidLogin@272ed83b</td></tr>
+<tr>
+<td title='tests.TC005_SearchHotelValidations.testHotelSearch()'><b>testHotelSearch</b><br>Test class: tests.TC005_SearchHotelValidations<br>Parameters: , Hotel Creek, Standard, 1, 20/04/2025, 22/04/2025, 2, 0, error_location</td>
+<td></td>
+<td>1</td>
+<td>tests.TC005_SearchHotelValidations@120f102b</td></tr>
+<tr>
+<td title='tests.TC018_VerifyAllBookingsVisible.verifyBookingRecordsDisplayed()'><b>verifyBookingRecordsDisplayed</b><br>Test class: tests.TC018_VerifyAllBookingsVisible</td>
+<td></td>
+<td>0</td>
+<td>tests.TC018_VerifyAllBookingsVisible@649bec2e</td></tr>
+<tr>
+<td title='tests.TC024_CancelMultipleBooking.testCancelSelectedButtonVisibility()'><b>testCancelSelectedButtonVisibility</b><br>Test class: tests.TC024_CancelMultipleBooking</td>
+<td></td>
+<td>55</td>
+<td>tests.TC024_CancelMultipleBooking@1a4013</td></tr>
+<tr>
+<td title='tests.TC001_LoginButtonVisibility.testSignupButtonIsVisible()'><b>testSignupButtonIsVisible</b><br>Test class: tests.TC001_LoginButtonVisibility</td>
+<td></td>
+<td>0</td>
+<td>tests.TC001_LoginButtonVisibility@3d1cfad4</td></tr>
+<tr>
+<td title='tests.TC003_InvalidLogin.testLogin()'><b>testLogin</b><br>Test class: tests.TC003_InvalidLogin<br>Parameters: M123, Muthuraj22$, error</td>
+<td></td>
+<td>0</td>
+<td>tests.TC003_InvalidLogin@272ed83b</td></tr>
+<tr>
+<td title='tests.TC016_MyItineraryButton.testMyItineraryButton()'><b>testMyItineraryButton</b><br>Test class: tests.TC016_MyItineraryButton</td>
+<td></td>
+<td>16</td>
+<td>tests.TC016_MyItineraryButton@27ff5d15</td></tr>
+<tr>
+<td title='tests.TC004_ValidLogin.testSignupButtonIsVisible()'><b>testSignupButtonIsVisible</b><br>Test class: tests.TC004_ValidLogin</td>
+<td></td>
+<td>1</td>
+<td>tests.TC004_ValidLogin@41fecb8b</td></tr>
+<tr>
+<td title='tests.TC006_SelectHotelButtons.testRadioButtonAndButtonsDisplayed()'><b>testRadioButtonAndButtonsDisplayed</b><br>Test class: tests.TC006_SelectHotelButtons</td>
+<td></td>
+<td>0</td>
+<td>tests.TC006_SelectHotelButtons@625732</td></tr>
+<tr>
+<td title='tests.TC017_LogoutButtonFunctionality.testLogoutButton()'><b>testLogoutButton</b><br>Test class: tests.TC017_LogoutButtonFunctionality</td>
+<td></td>
+<td>6</td>
+<td>tests.TC017_LogoutButtonFunctionality@4e096385</td></tr>
+<tr>
+<td title='tests.TC020_VerifyBookingCancellation.verifyBookingCancellation()'><b>verifyBookingCancellation</b><br>Test class: tests.TC020_VerifyBookingCancellation</td>
+<td></td>
+<td>36</td>
+<td>tests.TC020_VerifyBookingCancellation@34f5090e</td></tr>
+<tr>
+<td title='tests.TC012_BookWithEmptyField.validateEmptyBookingFields()'><b>validateEmptyBookingFields</b><br>Test class: tests.TC012_BookWithEmptyField<br>Parameters: Muthu, , , , , , , , , Please Enter you Last Name, Please Enter your Address, Please Enter your 16 Digit Credit Card Number, Please Select your Credit Card Type, Please Select your Credit Card Expiry Month, Please Enter your Credit Card CVV Number</td>
+<td></td>
+<td>61</td>
+<td>tests.TC012_BookWithEmptyField@b62d79</td></tr>
+<tr>
+<td title='tests.TC021_SearchFunctionality.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: tests.TC021_SearchFunctionality</td>
+<td></td>
+<td>29</td>
+<td>tests.TC021_SearchFunctionality@31e5415e</td></tr>
+<tr>
+<td title='tests.TC003_InvalidLogin.testLogin()'><b>testLogin</b><br>Test class: tests.TC003_InvalidLogin<br>Parameters: Muthuraj221999, , Enter Password</td>
+<td></td>
+<td>0</td>
+<td>tests.TC003_InvalidLogin@272ed83b</td></tr>
+<tr>
+<td title='tests.TC012_BookWithEmptyField.validateEmptyBookingFields()'><b>validateEmptyBookingFields</b><br>Test class: tests.TC012_BookWithEmptyField<br>Parameters: Muthu, Raj, Chennai, , VISA, April, 2026, , , , , Please Enter your 16 Digit Credit Card Number, , , Please Enter your Credit Card CVV Number</td>
+<td></td>
+<td>1</td>
+<td>tests.TC012_BookWithEmptyField@b62d79</td></tr>
+<tr>
+<td title='tests.TC011_ValidatePopulatedDetails.testPriceFieldsArePopulatedAndVisible()'><b>testPriceFieldsArePopulatedAndVisible</b><br>Test class: tests.TC011_ValidatePopulatedDetails</td>
+<td></td>
+<td>0</td>
+<td>tests.TC011_ValidatePopulatedDetails@2accdbb5</td></tr>
+<tr>
+<td title='tests.TC012_BookWithEmptyField.validateEmptyBookingFields()'><b>validateEmptyBookingFields</b><br>Test class: tests.TC012_BookWithEmptyField<br>Parameters: Muthu, Raj, Chennai, 4111111111111111, , April, 2026, 123, , , , , Please Select your Credit Card Type, , </td>
+<td></td>
+<td>21</td>
+<td>tests.TC012_BookWithEmptyField@b62d79</td></tr>
+<tr>
+<td title='tests.TC005_SearchHotelValidations.testHotelSearch()'><b>testHotelSearch</b><br>Test class: tests.TC005_SearchHotelValidations<br>Parameters: New York, Hotel Hervey, Super Deluxe, , 20/04/2025, 22/04/2025, 3, 2, error_room</td>
+<td></td>
+<td>2</td>
+<td>tests.TC005_SearchHotelValidations@120f102b</td></tr>
+<tr>
+<td title='tests.TC012_BookWithEmptyField.validateEmptyBookingFields()'><b>validateEmptyBookingFields</b><br>Test class: tests.TC012_BookWithEmptyField<br>Parameters: , Raj, , , , , , , Please Enter your First Name, , Please Enter your Address, Please Enter your 16 Digit Credit Card Number, Please Select your Credit Card Type, Please Select your Credit Card Expiry Month, Please Enter your Credit Card CVV Number</td>
+<td></td>
+<td>61</td>
+<td>tests.TC012_BookWithEmptyField@b62d79</td></tr>
+<tr>
+<td title='tests.TC003_InvalidLogin.testLogin()'><b>testLogin</b><br>Test class: tests.TC003_InvalidLogin<br>Parameters: Muthuraj221999, 987654321, error</td>
+<td></td>
+<td>0</td>
+<td>tests.TC003_InvalidLogin@272ed83b</td></tr>
+<tr>
+<td title='tests.TC005_SearchHotelValidations.testHotelSearch()'><b>testHotelSearch</b><br>Test class: tests.TC005_SearchHotelValidations<br>Parameters: Melbourne, Hotel Cornice, Double, 3, 21/04/2025, 24/04/2025, , 0, error_adult</td>
+<td></td>
+<td>1</td>
+<td>tests.TC005_SearchHotelValidations@120f102b</td></tr>
+<tr>
+<td title='tests.TC023_CancelBookingUsingCancelSelectedButton.testCancelSelectedButtonVisibility()'><b>testCancelSelectedButtonVisibility</b><br>Test class: tests.TC023_CancelBookingUsingCancelSelectedButton</td>
+<td></td>
+<td>55</td>
+<td>tests.TC023_CancelBookingUsingCancelSelectedButton@1cbb87f3</td></tr>
+<tr>
+<td title='tests.TC013_BookHotel.testBookingWithMandatoryFields()'><b>testBookingWithMandatoryFields</b><br>Test class: tests.TC013_BookHotel</td>
+<td></td>
+<td>7</td>
+<td>tests.TC013_BookHotel@6631f5ca</td></tr>
+</table><p>
+</body>
+</html>
